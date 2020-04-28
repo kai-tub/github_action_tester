@@ -3,9 +3,9 @@ on:
   push:
     branches: [ master ]
 
-defaults:
-  run: 
-    shell: ash
+# defaults:
+#   run: 
+#     shell: ash
 
 
 jobs:
@@ -14,6 +14,7 @@ jobs:
       runs-on: ubuntu-latest
       # runs all of the steps inside the specified container rather than on the VM host.
       # Bonus: The latest alpine image, which texlive is based on also integrates python3
+      # Doesn't work globally, as the image doesn't support the ash command :(
       container:
         image: xucheng/texlive-full:latest
       steps:
