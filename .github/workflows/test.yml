@@ -1,11 +1,10 @@
-name: Benchmarking LaTeX Packages
 on:
   push:
     branches: [ master ]
 
 jobs:
   test_and_build_latex:
-      name: Test and build latex documents
+      name: Test
       runs-on: ubuntu-latest
       # runs all of the steps inside the specified container rather than on the VM host.
       # Bonus: The latest alpine image, which texlive is based on also integrates python3
@@ -26,9 +25,3 @@ jobs:
           - name: Echo
             run: "python3 tests/echo.py"
             shell: sh
-          - name: Compile all *.tex files
-            run: latexmk -pdf -file-line-error -interaction=nonstopmode *.tex
-            shell: sh
-            # uses: docker://xucheng/texlive-full:latest
-            # with:
-            #   args: "python3 echo.py"
