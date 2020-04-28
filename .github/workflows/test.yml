@@ -1,17 +1,26 @@
 name: Benchmarking LaTeX Packages
 on:
-    push:
-        branches: [ master ]
+  push:
+    branches: [ master ]
+
+defaults:
+  run: 
+    shell: ash
+
 
 jobs:
-    test_and_build_latex:
-        name: Test and build latex documents
-        runs-on: ubuntu-latest
-        # container: xucheng/texlive-full:latest
-        steps:
-            - name: Set up Git
-              uses: actions/checkout@v2
-            - name: Echo
-              uses: docker://xucheng/texlive-full:latest
-              run: |
-                python3 echo.py
+  test_and_build_latex:
+      name: Test and build latex documents
+      runs-on: ubuntu-latest
+      # runs all of the steps inside the specified container rather than on the VM host.
+      # Bonus: The latest alpine image, which texlive is based on also integrates python3
+      container:
+        image: xucheng/texlive-full:latest
+      steps:
+          - name: Set up Git
+            uses: actions/checkout@v2
+          - name: Echo
+            run: python3 echo.py
+            # uses: docker://xucheng/texlive-full:latest
+            # with:
+            #   args: "python3 echo.py"
