@@ -3,10 +3,6 @@ on:
   push:
     branches: [ master ]
 
-defaults:
-  run: 
-    shell: sh
-
 jobs:
   test_and_build_latex:
       name: Test and build latex documents
@@ -15,6 +11,9 @@ jobs:
       # Bonus: The latest alpine image, which texlive is based on also integrates python3
       container:
         image: xucheng/texlive-small:latest
+      # This setting is enough for github action but the local act version doesn't support
+      # it yet. To still be able to run the tests locally, I will configure the shell
+      # on a per run basis
       defaults:
         run:
           shell: sh
@@ -22,8 +21,11 @@ jobs:
           - name: Set up Git
             uses: actions/checkout@v2
           - name: Echo
-            run: echo Hello
-            # shell: sh
+            run: python3 echo.py
+            shell: sh
+          - name: Compile all *.tex files
+            run: latexmk -pdf -file-line-error -interaction=nonstopmode *.tex
+            shell: sh
             # uses: docker://xucheng/texlive-full:latest
             # with:
             #   args: "python3 echo.py"
