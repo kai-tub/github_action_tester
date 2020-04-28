@@ -1,0 +1,15 @@
+name: Benchmarking LaTeX Packages
+on:
+    push:
+        branches: [ master ]
+
+jobs:
+    test_and_build_latex:
+        name: Test and build latex documents
+        runs-on: ubuntu-latest
+        steps:
+            - name: Set up Git
+              uses: actions/checkout@v2
+            - name: Echo
+              run: |
+                echo Hello
