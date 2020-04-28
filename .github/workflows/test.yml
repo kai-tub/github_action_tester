@@ -3,10 +3,9 @@ on:
   push:
     branches: [ master ]
 
-# defaults:
-#   run: 
-#     shell: ash
-
+defaults:
+  run: 
+    shell: sh
 
 jobs:
   test_and_build_latex:
@@ -14,14 +13,17 @@ jobs:
       runs-on: ubuntu-latest
       # runs all of the steps inside the specified container rather than on the VM host.
       # Bonus: The latest alpine image, which texlive is based on also integrates python3
-      # Doesn't work globally, as the image doesn't support the ash command :(
       container:
-        image: xucheng/texlive-full:latest
+        image: xucheng/texlive-small:latest
+      defaults:
+        run:
+          shell: sh
       steps:
           - name: Set up Git
             uses: actions/checkout@v2
           - name: Echo
-            run: python3 echo.py
+            run: echo Hello
+            # shell: sh
             # uses: docker://xucheng/texlive-full:latest
             # with:
             #   args: "python3 echo.py"
