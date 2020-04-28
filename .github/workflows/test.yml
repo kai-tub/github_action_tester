@@ -7,9 +7,11 @@ jobs:
     test_and_build_latex:
         name: Test and build latex documents
         runs-on: ubuntu-latest
+        # container: xucheng/texlive-full:latest
         steps:
             - name: Set up Git
               uses: actions/checkout@v2
             - name: Echo
+              uses: docker://xucheng/texlive-full:latest
               run: |
-                echo Hello
+                python3 echo.py
