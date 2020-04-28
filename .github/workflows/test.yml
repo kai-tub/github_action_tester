@@ -20,8 +20,11 @@ jobs:
       steps:
           - name: Set up Git
             uses: actions/checkout@v2
+          - name: Ls
+            run: ls
+            shell: sh
           - name: Echo
-            run: python3 echo.py
+            run: "python3 tests/echo.py"
             shell: sh
           - name: Compile all *.tex files
             run: latexmk -pdf -file-line-error -interaction=nonstopmode *.tex
