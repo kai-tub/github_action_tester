@@ -22,14 +22,14 @@ jobs:
       #     - name: Echo
       #       run: "python3 tests/echo.py"
       #       shell: sh
-      
+
   docs:
     name: Docs
     runs-on: ubuntu-latest
     steps:
       - name: Build docs
         run: |
-          cat "Hello World" > Documentation/hello.txt
+          echo "Hello World" > Documentation/hello.txt
       - name: Upload docs to wiki
         uses: SwiftDocOrg/github-wiki-publish-action@master
         with:
