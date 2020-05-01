@@ -29,6 +29,7 @@ jobs:
     steps:
       - name: Build docs
         run: |
+          mkdir Documentation
           echo "Hello World" > Documentation/hello.txt
       - name: Upload docs to wiki
         uses: SwiftDocOrg/github-wiki-publish-action@master
