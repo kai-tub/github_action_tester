@@ -3,30 +3,12 @@ on:
     branches: [ master ]
 
 jobs:
-  # test_and_build_latex:
-      # name: Test
-      # runs-on: ubuntu-latest
-      # # runs all of the steps inside the specified container rather than on the VM host.
-      # # Bonus: The latest alpine image, which texlive is based on also integrates python3
-      # container:
-      #   image: xucheng/texlive-small:latest
-      # # This setting is enough for github action but the local act version doesn't support
-      # # it yet. To still be able to run the tests locally, I will configure the shell
-      # # on a per run basis
-      # defaults:
-      #   run:
-      #     shell: sh
-      # steps:
-      #     - name: Set up Git
-      #       uses: actions/checkout@v2
-      #     - name: Echo
-      #       run: "python3 tests/echo.py"
-      #       shell: sh
-
   docs:
     name: Docs
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout
+        uses: actions/checkout@v1
       - name: Build docs
         run: |
           mkdir Documentation
