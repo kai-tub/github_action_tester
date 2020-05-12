@@ -13,6 +13,7 @@ jobs:
         run: |
           mkdir Documentation
           echo "Hello World" > Documentation/hello.txt
+          echo "::error::Error message" 1>&2
       - name: Upload docs to wiki
         uses: SwiftDocOrg/github-wiki-publish-action@master
         with:
