@@ -6,3 +6,4 @@ Tried fetching tags for now -> Mistake was wrong configuration of the .autorc fi
 
 Now it was pushed to v1 once again...
 How can I solve this problem?
+Setting it to 1.0.1
