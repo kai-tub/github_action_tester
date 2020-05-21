@@ -1,3 +1,15 @@
+# v1.0.3 (Thu May 21 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Will it work or break? (kainorman.clasen@novatec-gmbh.de)
+
+#### Authors: 1
+
+- Kai Norman Clasen (kainorman.clasen@novatec-gmbh.de)
+
+---
+
 # v1.0.2 (Thu May 21 2020)
 
 #### ⚠️  Pushed to `master`
