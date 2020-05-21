@@ -1,3 +1,16 @@
+# v1.0.2 (Thu May 21 2020)
+
+#### ⚠️  Pushed to `master`
+
+- deleted v1 tag (kainorman.clasen@novatec-gmbh.de)
+- what (kainorman.clasen@novatec-gmbh.de)
+
+#### Authors: 1
+
+- Kai Norman Clasen (kainorman.clasen@novatec-gmbh.de)
+
+---
+
 # (Thu May 21 2020)
 
 #### ⚠️  Pushed to `master`
