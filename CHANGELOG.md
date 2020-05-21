@@ -1,5 +1,17 @@
 # (Thu May 21 2020)
 
+#### ⚠️  Pushed to `master`
+
+- what (kainorman.clasen@novatec-gmbh.de)
+
+#### Authors: 1
+
+- Kai Norman Clasen (kainorman.clasen@novatec-gmbh.de)
+
+---
+
+# (Thu May 21 2020)
+
 :tada: This release contains work from a new contributor! :tada:
 
 Thank you, Kai Norman Clasen ([@kai-tub](https://github.com/kai-tub)), for all your work!
