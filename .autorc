@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    "git-tag",
+    "first-time-contributor"
+  ],
+  "owner": "kai-tub",
+  "repo": "external-repo-sync-action",
+  "name": "kai-tub",
+  "email": "kai.ce.tub@gmail.com"
+}
