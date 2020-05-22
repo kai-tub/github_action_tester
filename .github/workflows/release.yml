@@ -21,6 +21,6 @@ jobs:
         env:
           # Using my own personal access token to be able to
           # trigger automatic version bump afterwards.
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
         run: |
           ~/auto shipit
