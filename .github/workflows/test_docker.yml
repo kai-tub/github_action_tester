@@ -37,5 +37,5 @@ jobs:
         #   find . -type f -name '*.pdf' -exec convert -density 500 {}[0] {}.png \;
         uses: docker://alpine:edge
         with:
-          args: apk add --no-cache fish && fish hello.fish
+          args: sh ./local_commands.sh
 
