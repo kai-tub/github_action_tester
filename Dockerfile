@@ -1,7 +1,11 @@
-FROM alpine:edge
+# FROM alpine:edge
 
-RUN apk add --no-cache fish file imagemagick && rm -rf /tmp/* /etc/apk/cache/*
+# RUN apk add --no-cache fish file imagemagick && rm -rf /tmp/* /etc/apk/cache/*
 
-ENV SHELL /usr/bin/fish
+# ENV SHELL /usr/bin/fish
 
-ENTRYPOINT [ "fish" ]
+# ENTRYPOINT [ "fish" ]
+
+FROM xucheng/texlive-small:latest
+
+ENTRYPOINT [ "sh" ]
