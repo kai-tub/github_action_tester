@@ -42,5 +42,3 @@ jobs:
         with:
           entrypoint: /bin/sh
           args: latexmk -pdf -file-line-error -interaction=nonstopmode *.tex
-        # run: |
-        #  latexmk -pdf -file-line-error -interaction=nonstopmode *.tex
