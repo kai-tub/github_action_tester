@@ -4,16 +4,7 @@ name: Build
 # events but only for the master branch
 on:
   push:
-    paths:
-      - "**.tex"
-      - "**.yml"
     branches: [ master ]
-  pull_request:
-    paths:
-      - "**.tex"
-      - "**.yml"
-    branches: [ master ]
-  
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -41,5 +32,10 @@ jobs:
         # uses: docker://xucheng/texlive-small:latest
         # with:
         #   args: latexmk -pdf -file-line-error -interaction=nonstopmode demo.tex
-      - name: Hello 
-        uses: ubuntu-latest
+      - name: Run minimal script
+        # run: |
+        #   find . -type f -name '*.pdf' -exec convert -density 500 {}[0] {}.png \;
+        uses: docker://alpine:edge
+        with:
+          args: apk add --no-cache fish && fish hello.fish
+

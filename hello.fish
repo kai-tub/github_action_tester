@@ -1,0 +1,1 @@
+echo "Hello the script is working :)"
