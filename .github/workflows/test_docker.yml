@@ -6,6 +6,7 @@ on:
   push:
     paths:
       - "**.tex"
+      - "**.yml"
     branches: [ master ]
   pull_request:
     paths:
