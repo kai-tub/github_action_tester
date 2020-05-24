@@ -21,25 +21,25 @@ jobs:
   build_and_run_tests:
     name: Build all files
     runs-on: ubuntu-latest
-    # container:
-    #   image: xucheng/texlive-small:latest
-    # defaults:
-    #   run:
-    #     shell: sh
+    container:
+      image: xucheng/texlive-small:latest
+    defaults:
+      run:
+        shell: sh
     steps:
       - name: Set up repo
         uses: actions/checkout@v2
       - name: Install missing packages
-        uses: docker://xucheng/texlive-small:latest
-        with:
-          # entrypoint: /bin/sh
-          args: tlmgr install silence appendixnumberbeamer
-        # run: |
-        #   tlmgr install silence
-        #   tlmgr install appendixnumberbeamer
-        #   tlmgr install graphics
+        # uses: docker://xucheng/texlive-small:latest
+        # with:
+        #   args: tlmgr install silence appendixnumberbeamer
+        run: |
+          tlmgr install silence appendixnumberbeamer
       - name: Build minimal examples
-        uses: docker://xucheng/texlive-small:latest
-        with:
-          # entrypoint: /bin/sh
-          args: latexmk -pdf -file-line-error -interaction=nonstopmode demo.tex
+        run: |
+          latexmk -pdf -file-line-error -interaction=nonstopmode demo.tex
+        # uses: docker://xucheng/texlive-small:latest
+        # with:
+        #   args: latexmk -pdf -file-line-error -interaction=nonstopmode demo.tex
+      - name: Hello 
+        uses: ubuntu-latest
