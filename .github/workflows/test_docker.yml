@@ -42,4 +42,4 @@ jobs:
         uses: docker://xucheng/texlive-small:latest
         with:
           # entrypoint: /bin/sh
-          args: latexmk -pdf -file-line-error -interaction=nonstopmode *.tex
+          args: latexmk -pdf -file-line-error -interaction=nonstopmode demo.tex
