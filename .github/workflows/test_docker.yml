@@ -32,7 +32,7 @@ jobs:
       - name: Install missing packages
         uses: docker://xucheng/texlive-small:latest
         with:
-          entrypoint: /bin/sh
+          # entrypoint: /bin/sh
           args: tlmgr install silence && tlmgr install appendixnumberbeamer && tlmgr install graphics
         # run: |
         #   tlmgr install silence
@@ -41,5 +41,5 @@ jobs:
       - name: Build minimal examples
         uses: docker://xucheng/texlive-small:latest
         with:
-          entrypoint: /bin/sh
+          # entrypoint: /bin/sh
           args: latexmk -pdf -file-line-error -interaction=nonstopmode *.tex
