@@ -25,7 +25,7 @@ jobs:
         # with:
         #   args: tlmgr install silence appendixnumberbeamer
         run: |
-          tlmgr install silence appendixnumberbeamer
+          tlmgr install silence appendixnumberbeamer fira
       - name: Build minimal examples
         run: |
           latexmk -pdf -file-line-error -interaction=nonstopmode demo.tex
