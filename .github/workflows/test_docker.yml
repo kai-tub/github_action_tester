@@ -33,7 +33,7 @@ jobs:
         uses: docker://xucheng/texlive-small:latest
         with:
           # entrypoint: /bin/sh
-          args: tlmgr install silence && tlmgr install appendixnumberbeamer && tlmgr install graphics
+          args: tlmgr install silence appendixnumberbeamer
         # run: |
         #   tlmgr install silence
         #   tlmgr install appendixnumberbeamer
