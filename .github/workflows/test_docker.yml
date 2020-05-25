@@ -35,7 +35,7 @@ jobs:
       - name: Run minimal script
         # run: |
         #   find . -type f -name '*.pdf' -exec convert -density 500 {}[0] {}.png \;
-        uses: docker://alpine:edge
+        uses: docker://frapsoft/fish:latest
         with:
-          args: sh ./local_commands.sh
+          args: fish ./hello.fish
 
