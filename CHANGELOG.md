@@ -1,3 +1,15 @@
+# v1.0.5 (Tue May 26 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Release and upload (kainorman.clasen@novatec-gmbh.de)
+
+#### Authors: 1
+
+- Kai Norman Clasen (kainorman.clasen@novatec-gmbh.de)
+
+---
+
 # v1.0.4 (Tue May 26 2020)
 
 :tada: This release contains work from a new contributor! :tada:
