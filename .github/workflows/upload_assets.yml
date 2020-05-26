@@ -9,6 +9,10 @@ jobs:
     name: Create/Upload assets
     runs-on: ubuntu-latest
     steps:
+      - name: Set up Git
+        uses: actions/checkout@v2
+      - name: Get demo.pdf
+        run: wget https://github.com/kai-tub/latex-beamer-pure-minimalistic/wiki/demo.pdf -O demo.pdf
       - name: Get release
         id: release
         uses: bruceadams/get-release@v1.2.0
@@ -30,4 +34,11 @@ jobs:
           asset_path: ./pureminimalistic.tar.gz
           asset_name: pureminimalistic.tar.gz
           asset_content_type: application/tar.gz
+      - name: Upload demo.pdf
+        uses: actions/upload-release-asset@v1
+        with:
+          upload_url: ${{ steps.release.outputs.upload_url }}
+          asset_path: ./demo.pdf
+          asset_name: demo.pdf
+          asset_content_type: application/pdf
       
