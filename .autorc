@@ -1,0 +1,10 @@
+{
+  "plugins": [
+    "git-tag",
+    "first-time-contributor"
+  ],
+  "owner": "kai-tub",
+  "repo": "github_action_tester",
+  "name": "Kai Norman Clasen",
+  "email": "thekaiclasen@web.de"
+}
