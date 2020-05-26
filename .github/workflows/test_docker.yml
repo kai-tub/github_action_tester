@@ -22,7 +22,7 @@ jobs:
           chmod a+x ~/auto
       - name: Create Release
         run: |
-        ~/auto shipit
+          ~/auto shipit
       - name: Get release
         id: release
         uses: bruceadams/get-release@v1.2.0
