@@ -1,3 +1,15 @@
+# v1.0.6 (Tue May 26 2020)
+
+#### ⚠️  Pushed to `master`
+
+- New fix (kainorman.clasen@novatec-gmbh.de)
+
+#### Authors: 1
+
+- Kai Norman Clasen (kainorman.clasen@novatec-gmbh.de)
+
+---
+
 # v1.0.5 (Tue May 26 2020)
 
 #### ⚠️  Pushed to `master`
