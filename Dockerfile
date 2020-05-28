@@ -1,4 +1,4 @@
-# FROM alpine:edge
+FROM frapsoft/fish:latest
 
 # RUN apk add --no-cache fish file imagemagick && rm -rf /tmp/* /etc/apk/cache/*
 
@@ -6,6 +6,6 @@
 
 # ENTRYPOINT [ "fish" ]
 
-FROM xucheng/texlive-small:latest
+# FROM xucheng/texlive-small:latest
 
-ENTRYPOINT [ "sh" ]
+ENTRYPOINT [ "fish" ]

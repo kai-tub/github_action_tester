@@ -5,7 +5,7 @@
     [
       "exec",
       {
-        "beforeCommitChangelog": "bash echo.sh"
+        "beforeCommitChangelog": "fish update_package_versioning.fish"
       }
     ]
   ],
