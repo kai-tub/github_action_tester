@@ -17,6 +17,8 @@ jobs:
         run: |
           touch pls_work
           git add .
+          git config --global user.email "kai.ce.tub@gmail.com"
+          git config --global user.name "Kai"
           git commit -m "Auto updating version"
       - name: get shipit
         run: |
