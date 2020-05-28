@@ -16,6 +16,6 @@ jobs:
       - name: Run release script
         uses: docker://frapsoft/fish:latest
         with:
-          fish release.fish
+          args: fish release.fish
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
