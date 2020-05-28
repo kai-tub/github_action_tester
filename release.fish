@@ -1,5 +1,5 @@
 function setup_env -d "Download and install required packages/programs for release"
-    apk add --no-cache gunzip curl jq sed
+    apk add --no-cache gzip curl jq sed
 end
 
 function run_auto_tool -d "Run the automation release tool `auto` and trigger file versioning script"
