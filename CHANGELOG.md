@@ -1,6 +1,15 @@
-# v1.0.9 (Thu May 28 2020)
+# v1.0.8 (Thu May 28 2020)
 
+#### ⚠️  Pushed to `master`
 
+- call bash relatively (kainorman.clasen@novatec-gmbh.de)
+- dry run doesn't trigger hooks (kainorman.clasen@novatec-gmbh.de)
+- Added code to wrong place... (kainorman.clasen@novatec-gmbh.de)
+- Testing exec (kainorman.clasen@novatec-gmbh.de)
+
+#### Authors: 1
+
+- Kai Norman Clasen (kainorman.clasen@novatec-gmbh.de)
 
 ---
 
