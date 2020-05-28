@@ -5,7 +5,7 @@
     [
       "exec",
       {
-        "beforeCommitChangelog": "bash ~/echo.sh"
+        "beforeCommitChangelog": "bash echo.sh"
       }
     ]
   ],
