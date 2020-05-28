@@ -1,3 +1,20 @@
+# v1.0.7 (Thu May 28 2020)
+
+#### ⚠️  Pushed to `master`
+
+- Auto updating version (kai.ce.tub@gmail.com)
+- addded settings (kainorman.clasen@novatec-gmbh.de)
+- auto update ver (kainorman.clasen@novatec-gmbh.de)
+- Merge branch 'master' of github.com:kai-tub/github_action_tester (kainorman.clasen@novatec-gmbh.de)
+- Modified release (kainorman.clasen@novatec-gmbh.de)
+
+#### Authors: 2
+
+- Kai (kai.ce.tub@gmail.com)
+- Kai Norman Clasen (kainorman.clasen@novatec-gmbh.de)
+
+---
+
 # v1.0.6 (Tue May 26 2020)
 
 #### ⚠️  Pushed to `master`
