@@ -1,7 +1,13 @@
 {
   "plugins": [
     "git-tag",
-    "first-time-contributor"
+    "first-time-contributor",
+    [
+      "exec",
+      {
+        "beforeCommitChangelog": "bash ~/echo.sh"
+      }
+    ]
   ],
   "owner": "kai-tub",
   "repo": "github_action_tester",
