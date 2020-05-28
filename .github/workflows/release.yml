@@ -19,7 +19,7 @@ jobs:
           chmod a+x ~/auto
       - name: Create Release
         run: |
-          ~/auto shipit --dry-run
+          ~/auto shipit
         env:
           # To be able to trigger next event
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
