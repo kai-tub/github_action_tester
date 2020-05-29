@@ -15,6 +15,8 @@ newRelease=$(echo "$ARG_0" | jq -r '.currentVersion' )
 echo "lastRelease: $lastRelease"
 echo "newRelease: $newRelease"
 
+echo "$ARG_0"
+
 if [[ -z "$lastRelease" && -z "$newRelease" ]]; then
     error "auto provided empty ENV json!"
 fi
