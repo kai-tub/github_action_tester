@@ -8,6 +8,6 @@ RUN apt-get update && \
 ENV LANG=C.UTF-8 LANGUAGE=C.UTF-8 LC_ALL=C.UTF-8
 
 COPY release.sh update_package_versioning.sh .autorc \
-    /
+    /root/
 
-ENTRYPOINT [ "/release.sh" ]
+ENTRYPOINT [ "bash", "/root/release.sh" ]
