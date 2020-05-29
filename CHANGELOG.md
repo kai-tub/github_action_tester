@@ -1,3 +1,16 @@
+# v1.0.19 (Fri May 29 2020)
+
+#### ⚠️ Pushed to `master`
+
+- Merge branch 'master' of github.com:kai-tub/github_action_tester (kainorman.clasen@novatec-gmbh.de)
+- added (kainorman.clasen@novatec-gmbh.de)
+
+#### Authors: 1
+
+- Kai Norman Clasen (kainorman.clasen@novatec-gmbh.de)
+
+---
+
 # v1.0.18 (Fri May 29 2020)
 
 #### ⚠️ Pushed to `master`
