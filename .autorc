@@ -5,7 +5,10 @@
     [
       "exec",
       {
-        "beforeCommitChangelog": "bash auto_scripts/update_package_versioning.sh"
+        "beforeCommitChangelog": "bash auto_scripts/update_package_versioning.sh",
+        "afterAddToChangelog": "bash auto_scripts/echo.sh",
+        "afterVersion": "bash auto_scripts/echo.sh",
+        "afterRelease": "bash auto_scripts/echo.sh"
       }
     ]
   ],
