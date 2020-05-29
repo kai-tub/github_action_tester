@@ -14,8 +14,6 @@ jobs:
       - name: Prepare repository
         run: git fetch --unshallow --tags
       - name: Run release script
-        uses: docker://frapsoft/fish:latest
-        with:
-          args: fish release.fish
+        uses: ./.gitub/actions/auto-release-with-file-version-bump
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
