@@ -17,5 +17,7 @@ if [[ -z "$lastRelease" && -z "$newRelease" ]]; then
 fi
 
 echo "The script is actually running"
+ls -la
+echo "$PWD"
 
 sed -i "s/\[$lastRelease\]/[$newRelease]/g" -- *.sty
