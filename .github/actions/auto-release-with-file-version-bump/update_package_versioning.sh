@@ -16,4 +16,6 @@ if [[ -z "$lastRelease" && -z "$newRelease" ]]; then
     error "auto provided empty ENV json!"
 fi
 
+echo "The script is actually running"
+
 sed -i "s/\[$lastRelease\]/[$newRelease]/g" -- *.sty
