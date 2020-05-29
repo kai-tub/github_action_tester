@@ -1,3 +1,15 @@
+# v1.0.15 (Fri May 29 2020)
+
+#### ⚠️ Pushed to `master`
+
+- dafuq (kainorman.clasen@novatec-gmbh.de)
+
+#### Authors: 1
+
+- Kai Norman Clasen (kainorman.clasen@novatec-gmbh.de)
+
+---
+
 # v1.0.14 (Fri May 29 2020)
 
 #### ⚠️ Pushed to `master`
