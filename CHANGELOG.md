@@ -1,3 +1,28 @@
+# v1.0.9 (Fri May 29 2020)
+
+#### ⚠️ Pushed to `master`
+
+- Yolo it (kainorman.clasen@novatec-gmbh.de)
+- Temp fix (kainorman.clasen@novatec-gmbh.de)
+- passed in envs (kainorman.clasen@novatec-gmbh.de)
+- entrypoint fixed (kainorman.clasen@novatec-gmbh.de)
+- typo in docker (kainorman.clasen@novatec-gmbh.de)
+- typo in release.yml (kainorman.clasen@novatec-gmbh.de)
+- Added action yml (kainorman.clasen@novatec-gmbh.de)
+- Now? (kainorman.clasen@novatec-gmbh.de)
+- Update release.fish (kainorman.clasen@novatec-gmbh.de)
+- Update release.yml (kainorman.clasen@novatec-gmbh.de)
+- second try (kainorman.clasen@novatec-gmbh.de)
+- Trying first version (kainorman.clasen@novatec-gmbh.de)
+- merge (kainorman.clasen@novatec-gmbh.de)
+- Testing new tool (kainorman.clasen@novatec-gmbh.de)
+
+#### Authors: 1
+
+- Kai Norman Clasen ([@kai-tub](https://github.com/kai-tub))
+
+---
+
 # v1.0.8 (Thu May 28 2020)
 
 #### ⚠️  Pushed to `master`
