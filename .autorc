@@ -5,7 +5,7 @@
     [
       "exec",
       {
-        "beforeCommitChangelog": "bash update_package_versioning.sh"
+        "beforeCommitChangelog": "bash auto_scripts/update_package_versioning.sh"
       }
     ]
   ],
