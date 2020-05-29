@@ -17,3 +17,5 @@ jobs:
         uses: ./.github/actions/auto-release-with-file-version-bump
         env:
           GITHUB_TOKEN: ${{ secrets.GH_ACCESS_TOKEN }}
+          GITHUB_WORKSPACE: GITHUB_WORKSPACE
+          GITHUB_REPOSITORY: GITHUB_REPOSITORY
