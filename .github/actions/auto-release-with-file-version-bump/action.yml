@@ -1,0 +1,6 @@
+name: "Run the auto update tool for LaTeX beamer"
+description: "Runs auto update tool with git-tag extension and hooks into BeforeChangelog to run script, which updates the version in LaTeX files."
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
