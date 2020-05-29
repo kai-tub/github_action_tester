@@ -12,6 +12,9 @@ function error {
 lastRelease=$(echo "$ARG_0" | jq -r '.lastRelease' )
 newRelease=$(echo "$ARG_0" | jq -r '.currentVersion' )
 
+echo "lastRelease: $lastRelease"
+echo "newRelease: $newRelease"
+
 if [[ -z "$lastRelease" && -z "$newRelease" ]]; then
     error "auto provided empty ENV json!"
 fi
