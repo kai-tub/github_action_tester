@@ -1,28 +1,29 @@
 #!/bin/bash
 # Script is triggered by `auto` BeforeChangelog
+# Assumes current dir is the project root
 
-set -e 
+set -e
 
 # Print on stderr to not pollute function return echo
 function error {
     echo "::error::$1" >& 2
     exit 1
 }
+# https://stackoverflow.com/questions/59895/how-to-get-the-source-directory-of-a-bash-script-from-within-the-script-itself
+scriptFolder="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 
-lastRelease=$(echo "$ARG_0" | jq -r '.lastRelease' )
-newRelease=$(echo "$ARG_0" | jq -r '.currentVersion' )
+bumpType=$(echo "$ARG_0" | jq -r '.bump')
+currentVersion=$( echo "$ARG_0" | jq -r '.currentVersion' )
 
-echo "lastRelease: $lastRelease"
-echo "newRelease: $newRelease"
+echo "currentVersion: $currentVersion"
+echo "bump type: $bumpType"
 
-echo "$ARG_0"
 
-if [[ -z "$lastRelease" && -z "$newRelease" ]]; then
+if [[ -z "$currentVersion" ]]; then
     error "auto provided empty ENV json!"
 fi
 
-echo "The script is actually running"
-ls -la
-echo "$PWD"
+# bump version
+newVersion=$( "${scriptFolder}/semvertool.sh" bump "$bumpType" "$currentVersion" )
 
-sed -i "s/\[$lastRelease\]/[$newRelease]/g" -- *.sty
+sed -r "s/(\\ProvidesPackage\{\w+\})\[.+\]/\1\[${newVersion}\]/g" -- *.sty
