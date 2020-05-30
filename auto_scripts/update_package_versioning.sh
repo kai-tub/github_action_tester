@@ -24,6 +24,6 @@ if [[ -z "$currentVersion" ]]; then
 fi
 
 # bump version
-newVersion=$( "${scriptFolder}/semvertool.sh" bump "$bumpType" "$currentVersion" )
+newVersion=$( bash "${scriptFolder}/semvertool.sh" bump "$bumpType" "$currentVersion" )
 
 sed -r "s/(\\ProvidesPackage\{\w+\})\[.+\]/\1\[${newVersion}\]/g" -- *.sty
