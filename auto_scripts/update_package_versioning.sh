@@ -27,3 +27,4 @@ fi
 newVersion=$( bash "${scriptFolder}/semvertool.sh" bump "$bumpType" "$currentVersion" )
 
 sed -r -i "s/(\\ProvidesPackage\{\w+\})\[.+\]/\1\[${newVersion}\]/g" -- *.sty
+git add .
